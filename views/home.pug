@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content
+    section#introSection
+        div  Welcome to Hypothetical Dance Academy
+        div.small  Eat Dance Sleep Repeat 
+
+    section#missionSection
+        h2  OUR MISSION 
+        div.card
+            h3  TO DANCE WITH SWAG 
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-comtent 
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. At nesciunt officia, fuga impedit consequatur iusto reprehenderit saepe velit ad! Saepe, animi. Vero mollitia voluptatum consequuntur ipsum natus quas, culpa blanditiis?   
+        div.card
+            h3  TO DANCE WITH PERFECTION 
+            div.card-box
+                div.card-img
+                    img(src="/static/img/22.png")
+                div.card-comtent 
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. At nesciunt officia, fuga impedit consequatur iusto reprehenderit saepe velit ad! Saepe, animi. Vero mollitia voluptatum consequuntur ipsum natus quas, culpa blanditiis? 
+        div.card
+            h3  TO DANCE WITH CONFIDENCE
+            div.card-box
+                div.card-img
+                    img(src="/static/img/33.png")
+                div.card-comtent 
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. At nesciunt officia, fuga impedit consequatur iusto reprehenderit saepe velit ad! Saepe, animi. Vero mollitia voluptatum consequuntur ipsum natus quas, culpa blanditiis?  
+
+    section#sponsorsSection
+        h2  OUR SPONSORS   
+        div#sponsors
+                img(src="/static/img/logom.png", alt="Sponsor Image", class="spImage")
+                img(src="/static/img/logo2.png", alt="Sponsor Image", class="spImage")
+                img(src="/static/img/logo3.png", alt="Sponsor Image", class="spImage")
+                img(src="/static/img/logo4.png", alt="Sponsor Image", class="spImage")
